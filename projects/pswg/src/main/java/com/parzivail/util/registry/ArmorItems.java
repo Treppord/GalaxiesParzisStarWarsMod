@@ -14,9 +14,9 @@ public class ArmorItems
 
 	public ArmorItems(ArmorMaterial material, Item.Settings settings)
 	{
-		helmet = new ArmorItem(material, EquipmentSlot.HEAD, settings);
-		chestplate = new ArmorItem(material, EquipmentSlot.CHEST, settings);
-		leggings = new ArmorItem(material, EquipmentSlot.LEGS, settings);
-		boots = new ArmorItem(material, EquipmentSlot.FEET, settings);
+		helmet = new ArmorItem(material, ArmorItem.Type.HELMET, settings);
+		chestplate = new ArmorItem(material, ArmorItem.Type.CHESTPLATE, settings);
+		leggings = new ArmorItem(material, ArmorItem.Type.LEGGINGS, settings);
+		boots = new ArmorItem(material, ArmorItem.Type.BOOTS, settings);
 	}
 }

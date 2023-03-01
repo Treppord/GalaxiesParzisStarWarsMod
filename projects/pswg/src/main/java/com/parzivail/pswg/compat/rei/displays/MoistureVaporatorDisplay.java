@@ -1,4 +1,4 @@
-package com.parzivail.pswg.compat.rei.displays;
+/*package com.parzivail.pswg.compat.rei.displays;
 
 import com.parzivail.pswg.compat.rei.plugins.GalaxiesREICategories;
 import com.parzivail.pswg.recipe.VaporatorRecipe;
@@ -61,4 +61,4 @@ public class MoistureVaporatorDisplay extends BasicDisplay implements SimpleGrid
 	{
 		return 1;
 	}
-}
+}*/

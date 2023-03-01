@@ -119,7 +119,7 @@ public class JetpackItem extends TrinketItem implements IDefaultNbtProvider
 			if (o > 0.0F)
 			{
 				entity.playSound(entity.getFallSounds().small(), 1.0F, 1.0F);
-				entity.damage(DamageSource.FLY_INTO_WALL, (float)o);
+				entity.damage(entity.getDamageSources().flyIntoWall(), (float)o);
 			}
 		}
 

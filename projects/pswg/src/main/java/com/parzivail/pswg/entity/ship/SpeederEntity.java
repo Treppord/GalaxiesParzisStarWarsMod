@@ -10,6 +10,7 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.Vec3i;
 import net.minecraft.world.RaycastContext;
 import net.minecraft.world.World;
 import org.joml.Quaternionf;
@@ -50,7 +51,7 @@ public class SpeederEntity extends ShipEntity
 	{
 		super.tick();
 
-		var pilot = getPrimaryPassenger();
+		var pilot = getControllingPassenger();
 		if (pilot instanceof PlayerEntity pe)
 		{
 			if (pe.sidewaysSpeed > 0)
@@ -108,7 +109,7 @@ public class SpeederEntity extends ShipEntity
 			{
 				var pos = start.add(left.multiply(x * spacingSideways)).add(forward.multiply(z * spacingForward * 3)).add(0, range, 0);
 
-				if (!world.isAir(new BlockPos(pos)))
+				if (!world.isAir(new BlockPos(MathUtil.floorInt(pos))))
 					continue;
 
 				var blockHit = EntityUtil.raycastBlocks(pos, MathUtil.V3D_NEG_Y, range * 2, this, RaycastContext.ShapeType.COLLIDER, RaycastContext.FluidHandling.SOURCE_ONLY);

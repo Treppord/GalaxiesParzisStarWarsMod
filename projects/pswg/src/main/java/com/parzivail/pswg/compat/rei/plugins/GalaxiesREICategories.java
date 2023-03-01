@@ -1,4 +1,4 @@
-package com.parzivail.pswg.compat.rei.plugins;
+/*package com.parzivail.pswg.compat.rei.plugins;
 
 import com.parzivail.pswg.Resources;
 import com.parzivail.pswg.compat.rei.displays.MoistureVaporatorDisplay;
@@ -9,4 +9,4 @@ public class GalaxiesREICategories
 	private GalaxiesREICategories() {}
 
 	public static final CategoryIdentifier<MoistureVaporatorDisplay> MOISTURE_VAPORATOR = CategoryIdentifier.of(Resources.id("moisture_vaporator"));
-}
+}*/

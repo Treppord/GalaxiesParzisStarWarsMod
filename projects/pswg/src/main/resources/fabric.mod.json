@@ -36,12 +36,6 @@
 		"modmenu": [
 			"com.parzivail.pswg.compat.modmenu.GalaxiesModMenuIntegration"
 		],
-		"rei_client": [
-			"com.parzivail.pswg.compat.rei.plugins.GalaxiesREIClientPlugin"
-		],
-		"rei_server": [
-			"com.parzivail.pswg.compat.rei.plugins.GalaxiesREIServerPlugin"
-		],
 		"dynamiclights": [
 			"com.parzivail.pswg.compat.lambdynlights.LambDynamicLightsIntegration"
 		]
@@ -58,7 +52,7 @@
 		"cloth-config2": "*",
 		"fabric-api": ">=0.68.1",
 		"fabricloader": ">=0.14.8",
-		"minecraft": "1.19.3",
+		"minecraft": ">=1.19.4-beta.3 <=1.19.4",
 		"trinkets": "*"
 	},
 	"breaks": {

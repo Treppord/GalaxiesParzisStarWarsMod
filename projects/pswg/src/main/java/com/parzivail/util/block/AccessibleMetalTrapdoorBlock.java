@@ -1,6 +1,7 @@
 package com.parzivail.util.block;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockSetType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.TrapdoorBlock;
 import net.minecraft.entity.player.PlayerEntity;
@@ -16,7 +17,7 @@ public class AccessibleMetalTrapdoorBlock extends TrapdoorBlock
 {
 	public AccessibleMetalTrapdoorBlock(Settings settings)
 	{
-		super(settings, SoundEvents.BLOCK_IRON_TRAPDOOR_CLOSE, SoundEvents.BLOCK_IRON_TRAPDOOR_OPEN);
+		super(settings, BlockSetType.IRON);
 	}
 
 	@Override

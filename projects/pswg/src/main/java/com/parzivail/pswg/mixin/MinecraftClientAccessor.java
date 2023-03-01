@@ -13,7 +13,4 @@ public interface MinecraftClientAccessor
 {
 	@Accessor("pausedTickDelta")
 	float getPausedTickDelta();
-
-	@Invoker("initializeSearchProviders")
-	void invokeInitializeSearchProviders();
 }

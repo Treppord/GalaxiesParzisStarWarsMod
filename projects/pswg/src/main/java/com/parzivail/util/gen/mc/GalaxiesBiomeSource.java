@@ -12,6 +12,7 @@ import net.minecraft.world.biome.source.BiomeSource;
 import net.minecraft.world.biome.source.util.MultiNoiseUtil;
 
 import java.util.ArrayList;
+import java.util.stream.Stream;
 
 public class GalaxiesBiomeSource extends BiomeSource
 {
@@ -25,7 +26,7 @@ public class GalaxiesBiomeSource extends BiomeSource
 	protected GalaxiesBiomeSource(RegistryEntryLookup<Biome> biomes)
 	{
 		// TODO: implement this
-		super(new ArrayList<>());
+		super();
 
 		this.biomes = biomes;
 	}
@@ -34,6 +35,12 @@ public class GalaxiesBiomeSource extends BiomeSource
 	protected Codec<? extends BiomeSource> getCodec()
 	{
 		return CODEC;
+	}
+
+	@Override
+	protected Stream<RegistryEntry<Biome>> biomeStream()
+	{
+		return Stream.empty();
 	}
 
 	@Override

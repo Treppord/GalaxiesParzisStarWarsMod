@@ -1,4 +1,4 @@
-package com.parzivail.pswg.compat.rei.plugins;
+/*package com.parzivail.pswg.compat.rei.plugins;
 
 import com.parzivail.pswg.Resources;
 import com.parzivail.pswg.client.screen.MoistureVaporatorScreen;
@@ -37,4 +37,4 @@ public class GalaxiesREIClientPlugin implements REIClientPlugin
 	{
 		registry.registerContainerClickArea(new Rectangle(61, 26 , 52, 32), MoistureVaporatorScreen.class, GalaxiesREICategories.MOISTURE_VAPORATOR);
 	}
-}
+}*/

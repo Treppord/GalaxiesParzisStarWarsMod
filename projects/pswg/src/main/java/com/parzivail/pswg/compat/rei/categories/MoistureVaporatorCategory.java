@@ -1,4 +1,4 @@
-package com.parzivail.pswg.compat.rei.categories;
+/*package com.parzivail.pswg.compat.rei.categories;
 
 import com.parzivail.pswg.compat.rei.displays.MoistureVaporatorDisplay;
 import com.parzivail.pswg.compat.rei.plugins.GalaxiesREICategories;
@@ -70,4 +70,4 @@ public class MoistureVaporatorCategory implements DisplayCategory<MoistureVapora
 	{
 		return GalaxiesREICategories.MOISTURE_VAPORATOR;
 	}
-}
+}*/

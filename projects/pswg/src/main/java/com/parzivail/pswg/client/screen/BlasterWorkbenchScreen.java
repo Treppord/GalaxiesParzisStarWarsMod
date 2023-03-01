@@ -24,6 +24,7 @@ import net.minecraft.client.render.GameRenderer;
 import net.minecraft.client.render.LightmapTextureManager;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.model.json.ModelTransformation;
+import net.minecraft.client.render.model.json.ModelTransformationMode;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
@@ -205,7 +206,7 @@ public class BlasterWorkbenchScreen extends HandledScreen<BlasterWorkbenchScreen
 		text.add(Text.translatable(I18N_INCOMPAT_ATTACHMENT));
 
 		for (var a : incompat)
-			text.add(MutableText.of(BlasterItem.getAttachmentTranslation(blasterModel, a)).setStyle(Style.EMPTY.withColor(TextColor.fromRgb(0xA0A0A0))));
+			text.add(BlasterItem.getAttachmentTranslation(blasterModel, a).copy().setStyle(Style.EMPTY.withColor(TextColor.fromRgb(0xA0A0A0))));
 
 		return text;
 	}
@@ -339,7 +340,7 @@ public class BlasterWorkbenchScreen extends HandledScreen<BlasterWorkbenchScreen
 
 			MathUtil.scalePos(matrices, 5, 5, 5);
 
-			BlasterItemRenderer.INSTANCE.render(blaster, ModelTransformation.Mode.NONE, false, matrices, immediate, LightmapTextureManager.MAX_LIGHT_COORDINATE, OverlayTexture.DEFAULT_UV, null);
+			BlasterItemRenderer.INSTANCE.render(blaster, ModelTransformationMode.NONE, false, matrices, immediate, LightmapTextureManager.MAX_LIGHT_COORDINATE, OverlayTexture.DEFAULT_UV, null);
 			immediate.draw();
 
 			DiffuseLighting.enableGuiDepthLighting();
@@ -406,7 +407,7 @@ public class BlasterWorkbenchScreen extends HandledScreen<BlasterWorkbenchScreen
 				var iconU = attachment.category.getId() / 3;
 				var iconV = attachment.category.getId() % 3;
 
-				drawAttachmentRow(matrices, i, iconU, iconV, rowState, MutableText.of(BlasterItem.getAttachmentTranslation(blasterModel, attachment)));
+				drawAttachmentRow(matrices, i, iconU, iconV, rowState, BlasterItem.getAttachmentTranslation(blasterModel, attachment));
 			}
 		}
 	}

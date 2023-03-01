@@ -1,4 +1,4 @@
-package com.parzivail.pswg.compat.rei.plugins;
+/*package com.parzivail.pswg.compat.rei.plugins;
 
 import com.parzivail.pswg.compat.rei.displays.MoistureVaporatorDisplay;
 import com.parzivail.pswg.screen.MoistureVaporatorScreenHandler;
@@ -21,4 +21,4 @@ public class GalaxiesREIServerPlugin implements REIServerPlugin
 	{
 		registry.register(GalaxiesREICategories.MOISTURE_VAPORATOR, MoistureVaporatorScreenHandler.class, SimpleMenuInfoProvider.of(RecipeBookGridMenuInfo::new));
 	}
-}
+}*/
