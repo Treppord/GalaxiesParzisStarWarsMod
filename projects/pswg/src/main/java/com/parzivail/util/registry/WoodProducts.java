@@ -3,7 +3,6 @@ package com.parzivail.util.registry;
 import com.parzivail.util.block.PStairsBlock;
 import com.parzivail.util.block.VerticalSlabBlock;
 import net.minecraft.block.*;
-import net.minecraft.sound.SoundEvents;
 
 public class WoodProducts
 {

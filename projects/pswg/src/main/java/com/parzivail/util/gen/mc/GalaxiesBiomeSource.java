@@ -11,7 +11,6 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.source.BiomeSource;
 import net.minecraft.world.biome.source.util.MultiNoiseUtil;
 
-import java.util.ArrayList;
 import java.util.stream.Stream;
 
 public class GalaxiesBiomeSource extends BiomeSource

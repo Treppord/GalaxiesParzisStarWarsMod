@@ -2,7 +2,6 @@ package com.parzivail.util.client;
 
 import com.parzivail.util.data.TintedIdentifier;
 import com.parzivail.util.math.MathUtil;
-import net.minecraft.client.texture.NativeImage;
 import net.minecraft.util.math.ColorHelper;
 import net.minecraft.util.math.MathHelper;
 
